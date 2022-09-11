@@ -1,5 +1,5 @@
-<template>SWR: {{ time }}</template>
+<template>SWR: {{ data }}</template>
 
 <script setup lang="ts">
-const time = new Date();
+const { data } = await useFetch('/api/ssr');
 </script>
