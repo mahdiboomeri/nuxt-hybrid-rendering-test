@@ -2,13 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   nuxt: 3.0.0-rc.9
-  trpc-nuxt: ^0.2.8
-  zod: ^3.19.0
 
 devDependencies:
   nuxt: 3.0.0-rc.9
-  trpc-nuxt: 0.2.8
-  zod: 3.19.0
 
 packages:
 
@@ -275,13 +271,6 @@ packages:
       '@babel/plugin-syntax-typescript': 7.18.6_@babel+core@7.19.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/runtime/7.19.0:
-    resolution: {integrity: sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.9
     dev: true
 
   /@babel/standalone/7.19.0:
@@ -556,7 +545,7 @@ packages:
     dependencies:
       '@nuxt/kit': 3.0.0-rc.9
       chalk: 5.0.1
-      ci-info: 3.3.2
+      ci-info: 3.4.0
       consola: 2.15.3
       create-require: 1.1.1
       defu: 6.1.0
@@ -739,19 +728,6 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@trpc/client/9.27.2_@trpc+server@9.27.2:
-    resolution: {integrity: sha512-rpsgJJMalOtki5VjcyheL0zdft23mDnoBHn5cJMZLf3ssymCZq2crbvCiUmCRU289lYHrqffaaZ+9PqCSsVKfg==}
-    peerDependencies:
-      '@trpc/server': 9.27.2
-    dependencies:
-      '@babel/runtime': 7.19.0
-      '@trpc/server': 9.27.2
-    dev: true
-
-  /@trpc/server/9.27.2:
-    resolution: {integrity: sha512-LcXCC004SYWVdHqjSZVpoKkcM0tJNwWtvmjmE2Jir36F0siY1CCbr7g2vz6LcOtA/q7Jj5G2/x1qMWzlPq/Bwg==}
-    dev: true
-
   /@trysound/sax/0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
@@ -931,10 +907,10 @@ packages:
     resolution: {integrity: sha512-D3dl2ZB9qE6mTuWPk9RlhDeP1dgNRUKC3NJxji74A4yL8M2MwlhLKUC/49WHjrNzSPug58fWx/yFbaTzGAQSBw==}
     dev: true
 
-  /@vueuse/head/0.7.9_vue@3.2.39:
-    resolution: {integrity: sha512-5wnRiH2XIUSLLXJDLDDTcpvAg5QXgTIVZl46AU7to/T91KHsdBLHSE4WhRO7kP0jbkAhlxnx64E29cQtwBrMjg==}
+  /@vueuse/head/0.7.10_vue@3.2.39:
+    resolution: {integrity: sha512-hkvxpl99xiziDV7qAMtuzTZt5oHn6sOpdUuSlT27KhB/jVSpPrrIUKD1L/0JhLw8gCQoHGxmWalc3P7AYuzkoA==}
     peerDependencies:
-      vue: '>=3'
+      vue: '>=2.7 || >=3'
     dependencies:
       vue: 3.2.39
     dev: true
@@ -996,8 +972,8 @@ packages:
       color-convert: 2.0.1
     dev: true
 
-  /ansi-styles/6.1.0:
-    resolution: {integrity: sha512-VbqNsoz55SYGczauuup0MFUyXNQviSpFTj1RQtFzmQLk18qbVSpTFFGMT293rmDaQuKCT6InmbuEyUne4mTuxQ==}
+  /ansi-styles/6.1.1:
+    resolution: {integrity: sha512-qDOv24WjnYuL+wbwHdlsYZFy+cgPtrYw0Tn7GLORicQp9BkQLzrgI3Pm4VyR9ERZ41YTn7KlMPuL1n05WdZvmg==}
     engines: {node: '>=12'}
     dev: true
 
@@ -1143,7 +1119,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001393
-      electron-to-chromium: 1.4.246
+      electron-to-chromium: 1.4.247
       node-releases: 2.0.6
       update-browserslist-db: 1.0.7_browserslist@4.21.3
     dev: true
@@ -1256,8 +1232,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /ci-info/3.3.2:
-    resolution: {integrity: sha512-xmDt/QIAdeZ9+nfdPsaBCpMvHNLFiLdjj59qjqn+6iPe6YmHGQ35sBnQ8uslRBXFmXkiZQOJRjvQeoGppoTjjg==}
+  /ci-info/3.4.0:
+    resolution: {integrity: sha512-t5QdPT5jq3o262DOQ8zA6E1tlH2upmUc4Hlvrbx1pGYJuiiHl7O7rvVNI+l8HTVhd/q3Qc9vqimkNk5yiXsAug==}
     dev: true
 
   /cli-cursor/4.0.0:
@@ -1559,10 +1535,6 @@ packages:
       ms: 2.1.2
     dev: true
 
-  /dedent/0.7.0:
-    resolution: {integrity: sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==}
-    dev: true
-
   /deepmerge/4.2.2:
     resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
     engines: {node: '>=0.10.0'}
@@ -1669,8 +1641,8 @@ packages:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
     dev: true
 
-  /electron-to-chromium/1.4.246:
-    resolution: {integrity: sha512-/wFCHUE+Hocqr/LlVGsuKLIw4P2lBWwFIDcNMDpJGzyIysQV4aycpoOitAs32FT94EHKnNqDR/CVZJFbXEufJA==}
+  /electron-to-chromium/1.4.247:
+    resolution: {integrity: sha512-FLs6R4FQE+1JHM0hh3sfdxnYjKvJpHZyhQDjc2qFq/xFvmmRt/TATNToZhrcGUFzpF2XjeiuozrA8lI0PZmYYw==}
     dev: true
 
   /emoji-regex/8.0.0:
@@ -3223,7 +3195,7 @@ packages:
       '@nuxt/vite-builder': 3.0.0-rc.9_vue@3.2.39
       '@vue/reactivity': 3.2.39
       '@vue/shared': 3.2.39
-      '@vueuse/head': 0.7.9_vue@3.2.39
+      '@vueuse/head': 0.7.10_vue@3.2.39
       chokidar: 3.5.3
       cookie-es: 0.5.0
       defu: 6.1.0
@@ -3850,10 +3822,6 @@ packages:
       redis-errors: 1.2.0
     dev: true
 
-  /regenerator-runtime/0.13.9:
-    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
-    dev: true
-
   /require-directory/2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
@@ -4320,26 +4288,6 @@ packages:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: true
 
-  /trpc-nuxt/0.2.8:
-    resolution: {integrity: sha512-NcjpGhV6dTdcSIVRD1N/jrSjmmJDpBIMpCNESjyAHZbltECWU6mIGlKkXFChjSPoABFEc/CLQcsi1NIuNtcobw==}
-    dependencies:
-      '@nuxt/kit': 3.0.0-rc.9
-      '@trpc/client': 9.27.2_@trpc+server@9.27.2
-      '@trpc/server': 9.27.2
-      dedent: 0.7.0
-      defu: 6.1.0
-      h3: 0.7.21
-      ohash: 0.1.5
-      pathe: 0.3.7
-      ufo: 0.8.5
-    transitivePeerDependencies:
-      - esbuild
-      - rollup
-      - supports-color
-      - vite
-      - webpack
-    dev: true
-
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
@@ -4797,7 +4745,7 @@ packages:
     resolution: {integrity: sha512-QFF+ufAqhoYHvoHdajT/Po7KoXVBPXS2bgjIam5isfWJPfIOnQZ50JtUiVvCv/sjgacf3yRrt2ZKUZ/V4itN4g==}
     engines: {node: '>=12'}
     dependencies:
-      ansi-styles: 6.1.0
+      ansi-styles: 6.1.1
       string-width: 5.1.2
       strip-ansi: 7.0.1
     dev: true
@@ -4868,8 +4816,4 @@ packages:
       archiver-utils: 2.1.0
       compress-commons: 4.1.1
       readable-stream: 3.6.0
-    dev: true
-
-  /zod/3.19.0:
-    resolution: {integrity: sha512-Yw0qvUsCNGBe5YacikdMt5gVYeUuaEFVDIHKMfElrGSaBhwR3CQK6vOzgfAJOjTdGIhEeoaj8GtT+NDZrepZbw==}
     dev: true
