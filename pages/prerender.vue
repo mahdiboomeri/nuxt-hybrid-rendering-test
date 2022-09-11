@@ -1,5 +1,5 @@
-<template>Prerender (SSG): {{ time }}</template>
+<template>Prerender on build: {{ data }}</template>
 
 <script setup lang="ts">
-const time = new Date();
+const { data } = await useFetch('/api/ssr');
 </script>
