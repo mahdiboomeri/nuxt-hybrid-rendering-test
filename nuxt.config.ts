@@ -6,5 +6,8 @@ export default defineNuxtConfig({
 		routes: {
 			'/swr/*': { swr: true }, // Once on-demand each 10 minutes (via lambda)
 		},
+		prerender: {
+			routes: ['/prerender']
+		}
 	},
 });
