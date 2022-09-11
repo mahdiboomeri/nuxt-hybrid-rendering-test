@@ -4,7 +4,8 @@ import { defineNuxtConfig } from 'nuxt';
 export default defineNuxtConfig({
 	nitro: {
 		routes: {
-			'/swr/*': { swr: true }, // Once on-demand each 10 minutes (via lambda)
+			'/swr': { swr: true }, // Once on-demand each 10 minutes (via lambda)
+			'/redirectToSSR': {redirect: '/ssr'}
 		},
 		prerender: {
 			routes: ['/prerender']
