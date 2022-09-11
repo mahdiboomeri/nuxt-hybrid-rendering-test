@@ -4,7 +4,7 @@ import { defineNuxtConfig } from 'nuxt';
 export default defineNuxtConfig({
 	nitro: {
 		routes: {
-			'/swr': { swr: 120 }, // Once on-demand each 10 minutes (via lambda)
+			'/swr': { swr: true }, // Once on-demand each 10 minutes (via lambda)
 		},
 	},
 });
