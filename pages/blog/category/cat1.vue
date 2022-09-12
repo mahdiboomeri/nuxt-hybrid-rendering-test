@@ -1,0 +1,1 @@
+<template>Category 1</template>

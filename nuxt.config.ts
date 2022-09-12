@@ -5,10 +5,14 @@ export default defineNuxtConfig({
 	nitro: {
 		routes: {
 			'/swr': { swr: true }, // Once on-demand each 10 minutes (via lambda)
-			'/redirectToSSR': {redirect: '/ssr'}
+			'/redirectToSSR': { redirect: '/ssr' },
 		},
 		prerender: {
-			routes: ['/prerender']
-		}
+			routes: [
+				'/blog',
+				'/blog/:id',
+				'/blog/category/**'
+			],
+		},
 	},
 });
