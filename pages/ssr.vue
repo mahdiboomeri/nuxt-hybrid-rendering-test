@@ -1,4 +1,4 @@
-<template>I'm server-side rendering: {{ data }}</template>
+<template>I'm server-side rendering: {{ useDate(data?.date) }}</template>
 
 <script setup lang="ts">
 const { data } = await useFetch("/api/date");

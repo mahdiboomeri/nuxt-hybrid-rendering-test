@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     // Fully static on build (using wildcards)
     "/blog/**": { static: true },
     // CSR
-    "/clientSide": { ssr: false },
+    "/client": { ssr: false },
     // Static on build
     "/prerender": { static: true },
     // Redirect to /ssr
