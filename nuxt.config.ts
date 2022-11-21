@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   routeRules: {
     // Fully static on build (using wildcards)
-    "/blog/**": { static: true },
+    "/blog/**": { swr: true },
     // CSR
     "/client": { ssr: false },
     // Static on build
