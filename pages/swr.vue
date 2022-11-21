@@ -1,5 +1,5 @@
-<template>SWR: {{ data }}</template>
+<template>Stale-while-revalidate (ISR): {{ data }}</template>
 
 <script setup lang="ts">
-const { data } = await useFetch('/api/ssr');
+const { data } = await useFetch("/api/ssr");
 </script>

@@ -1,5 +1,5 @@
-<template>I'm client side with these data: {{ data }}</template>
+<template>I'm rendering on the client (see the network tab): {{ data }}</template>
 
 <script setup lang="ts">
-const { data } = await useFetch('/api/client');
+const { data } = await useFetch("/api/date");
 </script>

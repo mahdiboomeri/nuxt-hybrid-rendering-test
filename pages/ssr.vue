@@ -1,5 +1,5 @@
-<template>I'm SSR with these data: {{ data }}</template>
+<template>I'm server-side rendering: {{ data }}</template>
 
 <script setup lang="ts">
-const { data } = await useFetch('/api/ssr');
+const { data } = await useFetch("/api/date");
 </script>
