@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   routeRules: {
-    // Fully static on build (using wildcards)
+    // On-damand with wildcards
     "/blog/**": { swr: 60 * 1000 },
     // CSR
     "/client": { ssr: false },
