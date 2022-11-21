@@ -1,0 +1,1 @@
+import{a as s,w as o,t as _,u as r}from"./entry.4efd4aed.js";import{u as i,a as p}from"./useDate.9764ee7d.js";const h=s({__name:"prerender",async setup(u){let e,t;const{data:n}=([e,t]=o(()=>p("/api/date","$FhinPkQgSz")),e=await e,t(),e);return(c,d)=>{var a;return"Pre-rendered on build: "+_(r(i)((a=r(n))==null?void 0:a.date))}}});export{h as default};

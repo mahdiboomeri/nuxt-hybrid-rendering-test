@@ -1,0 +1,1 @@
+import{a as n,w as o,t as _,u as s}from"./entry.4efd4aed.js";import{u as i,a as p}from"./useDate.9764ee7d.js";const h=n({__name:"ssr",async setup(c){let e,t;const{data:r}=([e,t]=o(()=>p("/api/date","$Ff7MJv4K3F")),e=await e,t(),e);return(m,u)=>{var a;return"I'm server-side rendering: "+_(s(i)((a=s(r))==null?void 0:a.date))}}});export{h as default};

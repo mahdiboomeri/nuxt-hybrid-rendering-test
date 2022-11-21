@@ -1,0 +1,1 @@
+import{a as r,w as o,t as i,u as n}from"./entry.4efd4aed.js";import{u as _,a as c}from"./useDate.9764ee7d.js";const l=r({__name:"client",async setup(p){let t,e;const{data:s}=([t,e]=o(()=>c("/api/date","$zF1jvkilnv")),t=await t,e(),t);return(m,u)=>{var a;return"I'm rendering on the client (see the network tab): "+i(n(_)((a=n(s))==null?void 0:a.date))}}});export{l as default};

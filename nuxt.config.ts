@@ -10,6 +10,6 @@ export default defineNuxtConfig({
     // Redirect to /ssr
     "/redirectToSSR": { redirect: "/ssr" },
     // On-damand
-    "/swr": { swr: 60 },
+    "/swr/**": { swr: 60 },
   },
 });
