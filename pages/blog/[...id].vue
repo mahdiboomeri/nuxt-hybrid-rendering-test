@@ -1,7 +1,9 @@
-<template>Post Id: {{ route.params.id }}</template>
+<template>
+  Stale-while-revalidate (ISR) in dynamic route ({{ route.params.id }}):
+  {{ useDate(data?.date) }}
+</template>
 
 <script setup lang="ts">
 const route = useRoute();
-
-console.log("log blog single page");
+const { data } = await useFetch("/api/date");
 </script>
