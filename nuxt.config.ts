@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   routeRules: {
     // Fully static on build (using wildcards)
-    "/blog/**": { static: true },
+    "/blog/**": { swr: true },
     // CSR
     "/client": { ssr: false },
     // Static on build
@@ -10,6 +10,6 @@ export default defineNuxtConfig({
     // Redirect to /ssr
     "/redirectToSSR": { redirect: "/ssr" },
     // On-damand
-    "/swr/**": { swr: 60 },
+    "/swr": { swr: 60 },
   },
 });
